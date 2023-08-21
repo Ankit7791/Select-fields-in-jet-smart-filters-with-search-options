@@ -21,13 +21,13 @@ Step 2: Initialize Select2
 Create a JavaScript file (e.g., select2-init.js) and place it in your theme's JS directory. In this file, initialize Select2 for your select option field. Here's an example:
 You can also use custom css and js plugin : https://wordpress.org/plugins/custom-css-js/
 
-jQuery(document).ready(function($) {
-    // Replace 'select.jet-select__control' with the actual selector for your select option field.
-    $('select.jet-select__control').select2({
-        placeholder: 'Search...',
-        width: '100%',
-        minimumInputLength: 2, // Customize this value as needed
+    jQuery(document).ready(function($) {
+        // Replace 'select.jet-select__control' with the actual selector for your select option field.
+        $('select.jet-select__control').select2({
+            placeholder: 'Search...',
+            width: '100%',
+            minimumInputLength: 2, // Customize this value as needed
+        });
     });
-});
 
 Replace 'select.jet-select__control' with the actual selector for your select option field.
